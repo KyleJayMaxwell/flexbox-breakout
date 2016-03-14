@@ -1,0 +1,13 @@
+.container{
+  /* this is what is necessary */
+  display: flex;
+  height: 100vh;
+}
+
+.box{
+  width: 50%;
+  /* this is what is necessary */
+  margin: auto;
+  background-color: black;
+  color: white;
+}

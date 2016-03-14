@@ -1,0 +1,55 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+p{
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+header, footer {
+  background-color: #50514F;
+}
+
+main{
+  display: flex;
+  flex: 1;
+}
+
+.content{
+  background-color: #247BA0;
+  color: #FFFCFF;
+  flex: 1;
+}
+
+.left-sidebar, .right-sidebar{
+  background-color: #C3B299;
+  flex: 0 0 15rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  .left-sidebar, .right-sidebar{
+  flex: 0 0 auto;
+  order: 0;
+  }
+/*  .right-sidebar{
+    order: 1;
+  }*/
+  .content{
+    order: 1;
+  }
+/*  .left-sidebar{
+    order: 2;
+  }*/
+
+
+}
